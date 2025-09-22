@@ -1,37 +1,68 @@
 ---
-title: Customize the Favicon
-author: cotes
-date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+title: Blog (Medium)
+author: Medium
+description: >-
+  I started blogging on Medium to document my learning process, share write-ups, and reflect on my cybersecurity and tech journey.
+date: 2025-05-01 00:34:00 +0800
+categories: [Blogging, WriteUps]
+tags: [Blogging, WriteUps, Learning, Cybersecurity]
+image:
+  path: /assets/img/favicons/3.png
+  alt: "Medium blogging journey"
+
 ---
 
-The [favicons](https://www.favicon-generator.org/about/) of [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/) are placed in the directory `assets/img/favicons/`{: .filepath}. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+## Why I Started Blogging  
 
-## Generate the favicon
+In May 2025, I decided to begin publishing articles and write-ups on **Medium**.  
+My goal is simple: to **document my learning process**, track my progress, and share insights with others in the cybersecurity and tech community.  
 
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool [**Real Favicon Generator**](https://realfavicongenerator.net/) and click the button <kbd>Select your Favicon image</kbd> to upload your image file.
+I believe that **writing is one of the best ways to learn** .
 
-In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button <kbd>Generate your Favicons and HTML code</kbd> to generate the favicon.
+I also really have a **passion for blogging** or editing some videos cause im into art , and I think this is the best way to capture and share some of my learnings. Even though there were times when some drafts or notes got **accidentally deleted**, I want to keep going. I know I’m just starting, but I hope I can create **valuable write-ups** in the near future.  
 
-## Download & Replace
+---
 
-Download the generated package, unzip and delete the following two from the extracted files:
+## What I Write About  
 
-- `browserconfig.xml`{: .filepath}
-- `site.webmanifest`{: .filepath}
+So far, my focus has been on:  
 
-And then copy the remaining image files (`.PNG`{: .filepath} and `.ICO`{: .filepath}) to cover the original files in the directory `assets/img/favicons/`{: .filepath} of your Jekyll site. If your Jekyll site doesn't have this directory yet, just create one.
+- **CTF Write-Ups** → documenting steps and lessons from challenges I solved.  
+- **Learning Notes** → summarizing key takeaways from courses, labs, and hands-on practice.  
+- **Reflections** → personal thoughts on growth, mindset, and career direction.  
 
-The following table will help you understand the changes to the favicon files:
+---
 
-| File(s)             | From Online Tool                  | From Chirpy |
-|---------------------|:---------------------------------:|:-----------:|
-| `*.PNG`             | ✓                                 | ✗           |
-| `*.ICO`             | ✓                                 | ✗           |
+## Example Topics  
 
-<!-- markdownlint-disable-next-line -->
->  ✓ means keep, ✗ means delete.
-{: .prompt-info }
+- How I solved my first **TryHackMe room** step by step.  
+- Lessons from Google Cybersecurity Professional Certificate.  
+- Write-ups from **CTFs** like Industrial Intrusion and Trend Micro UCTF.  
+- Reflections on persistence, consistency, and building cybersecurity skills.  
 
-The next time you build the site, the favicon will be replaced with a customized edition.
+---
+
+## Lessons Learned  
+
+Blogging has helped me:  
+
+- Reinforce my technical knowledge.  
+- Build a personal knowledge base I can revisit.  
+- Share insights with peers who may be learning the same things.  
+- Gain confidence in **communicating complex ideas simply**.  
+
+---
+
+## Looking Ahead  
+
+I plan to:  
+
+- Write more **detailed CTF walkthroughs**.  
+- Share practical tips from real-world labs and tools.  
+- Document my journey towards certifications like **CompTIA Security+** and beyond.  
+
+
+![GIF](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzFiMGk5NmFoZW9lcnA3cjE4dXYzcWNlZ2NxcnFxdGlkenEzMjU0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FB7moeAerwlq2vS/giphy.gif){: .w-50 .shadow .rounded-3 }
+---
+
+*“I write not because I know everything, but because I’m still learning.”*   
