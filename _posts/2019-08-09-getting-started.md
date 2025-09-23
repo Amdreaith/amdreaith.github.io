@@ -7,11 +7,14 @@ categories: [CTF, TryHackMe]
 tags: [CTF, TryHackMe, Cybersecurity, Industrial Intrusion, OSINT]
 pin: true
 image:
-  path:  /assets/img/favicons/2.png
+  path: /assets/img/favicons/2.png
   alt: "TryHackMe Industrial Intrusion CTF"
-
-
 ---
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 342bcb902032d64b9a48a339e432267a880b098a
 ## Overview
 
 In June 2025, I joined my **first-ever Capture the Flag (CTF)** competition: **Industrial Intrusion** on TryHackMe.  
@@ -49,4 +52,9 @@ Recognizing this, the next step involved examining the content for encoding. Upo
 
 ### Reflection
 
+<<<<<<< HEAD
 This was my first practical CTF and it taught me confidence: try things, document steps, and communicate with teammates. I still have a lot to learn, but this experience motivated me to continue practicing.
+=======
+This was my first practical CTF and it taught me confidence: try things, document steps, and communicate with teammates. I still have a lot to learn, but this experience motivated me to continue practicing.
+
+>>>>>>> 342bcb902032d64b9a48a339e432267a880b098a
