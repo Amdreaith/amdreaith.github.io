@@ -917,45 +917,53 @@ The challenge simulated an <strong>industrial control system (ICS)</strong> envi
 
 <hr />
 
-<h2 id="example-challenge--web-enumeration--forensics"><span class="me-2">Example Challenge — Web Enumeration &amp; Forensics</span><a href="#example-challenge--web-enumeration--forensics" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="example-challenge--web-enumeration--forensics"><span class="me-2">Example Challenge</span><a href="#example-challenge--web-enumeration--forensics" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p><strong>Challenge (short):</strong> Find a way to bypass the badge authentication system by interacting with an exposed web UI and uncover the hidden flag.</p>
 
-<h3 id="reproduction-steps-what-i-did"><span class="me-2">Reproduction steps (what I did)</span><a href="#reproduction-steps-what-i-did" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h3 id="reproduction-steps-what-i-did"><span class="me-2">Steps :</span><a href="#reproduction-steps-what-i-did" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<ol>
-  <li><strong>Port scan the target</strong>
-```bash
-nmap -sC -sV -p- 10.10.154.123</li>
-  <li>Directory enumeration</li>
-</ol>
+<ul>
+  <li>OSINT 1</li>
 
-<p>gobuster dir -u “http://10.10.154.123:1880” <br />
-  -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt <br />
-  -x .txt,.html,.php,.bak -t 50</p>
-
-<p>Gobuster returned several directories. Notably, there were two /ui-style directories that differed only by case: /ui and /UI. Case differences can expose alternate resources; I tried both.</p>
-
-<ol>
-  <li>Open the UI
-Visit:</li>
-</ol>
-
-<p>http://10.10.154.123:1880/ui</p>
-
-<p>The UI presented controls (toggles) for systems such as a motion detector and a badge.</p>
-
-<ol>
   <li>
-    <p>Interact with the interface
-Toggle off the motion detector and the badge control, then refresh the page to confirm the new state. The UI reflected the changes and the backend accepted the new state.</p>
+    During the challenge, a critical piece of information was identified: 
+    a link to a GitHub repository: 
+    <a href="https://github.com/solstice-tech1/ot-auth-mirror/blob/main/index.html" target="_blank">
+      https://github.com/solstice-tech1/ot-auth-mirror/blob/main/index.html
+    </a>.
+    This suggested that the website's source code, or at least a relevant part of it, was hosted there.
   </li>
-  <li>
-    <p>Result
-After disabling those features and refreshing, the gate authentication was effectively bypassed and the challenge revealed the flag.</p>
-  </li>
-</ol>
 
+  <li>
+    <img width="484" height="225" alt="screenshot" 
+         src="https://github.com/user-attachments/assets/42af9184-66cf-410e-8c3a-70f6bb48b0af" />
+  </li>
+
+  <li>
+    Initially, an attempt was made to directly paste or interact with this source on a live website, 
+    but it yielded no functional results.
+  </li>
+
+  <li>
+    This indicated that the raw HTML was not intended for direct use in its current form.
+  </li>
+
+  <li>
+    <img width="573" height="323" alt="screenshot" 
+         src="https://github.com/user-attachments/assets/45c14fb1-3989-4e34-8e16-287597c363a9" />
+  </li>
+
+  <li>
+    Recognizing this, the next step involved examining the content for encoding. 
+    Upon closer inspection, the data appeared to be in a hexadecimal format, 
+    prompting an attempt to decode it from hexadecimal, which proved to be the correct 
+    approach for revealing the underlying information.
+  </li>
+</ul>
+
+
+    
 <p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVrYWRxZzlxNjkwYWlkMHp4em8xNHB6OHYwM3BldXg3czJqdWFjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KMgPHp5bI60qDWPy1A/giphy.gif" class="popup img-link w-80 shimmer"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVrYWRxZzlxNjkwYWlkMHp4em8xNHB6OHYwM3BldXg3czJqdWFjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KMgPHp5bI60qDWPy1A/giphy.gif" alt="GIF" class="shadow rounded-3" loading="lazy"></a></p>
 
 <h3 id="reflection"><span class="me-2">Reflection</span><a href="#reflection" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
