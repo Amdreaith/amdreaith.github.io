@@ -29,34 +29,18 @@ The challenge simulated an **industrial control system (ICS)** environment. Our 
 
 ## Example Challenge  
 
-**Challenge (short):** Find a way to bypass the badge authentication system by interacting with an exposed web UI and uncover the hidden flag.
+OSINT 1
 
-### Steps
+During the challenge, a critical piece of information was identified: a link to a GitHub repository, https://github.com/solstice-tech1/ot-auth-mirror/blob/main/index.html. This suggested that the website's source code, or at least a relevant part of it, was hosted there.
+<img width="484" height="225" alt="image" src="https://github.com/user-attachments/assets/42af9184-66cf-410e-8c3a-70f6bb48b0af" />
 
 
-1. **Port scan the target**
-   ```bash
-   nmap -sC -sV -p- 10.10.154.123
-   ```
+Initially, an attempt was made to directly paste or interact with this source on a live website, but it yielded no functional results. This indicated that the raw HTML was not intended for direct use in its current form.
+<img width="573" height="323" alt="image" src="https://github.com/user-attachments/assets/45c14fb1-3989-4e34-8e16-287597c363a9" />
 
-2. **Directory enumeration**
-   ```bash
-   gobuster dir -u "http://10.10.154.123:1880" \
-     -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt \
-     -x .txt,.html,.php,.bak -t 50
-   ```
-   
-   Gobuster returned several directories. Notably, there were two /ui-style directories that differed only by case: `/ui` and `/UI`. Case differences can expose alternate resources; I tried both.
 
-3. **Open the UI**  
-   Visit: `http://10.10.154.123:1880/ui`  
-   The UI presented controls (toggles) for systems such as a motion detector and a badge.
+Recognizing this, the next step involved examining the content for encoding. Upon closer inspection, the data appeared to be in a hexadecimal format, prompting an attempt to decode it from hexadecimal, which proved to be the correct approach for revealing the underlying information.
 
-4. **Interact with the interface**  
-   Toggle off the motion detector and the badge control, then refresh the page to confirm the new state. The UI reflected the changes and the backend accepted the new state.
-
-5. **Result**  
-   After disabling those features and refreshing, the gate authentication was effectively bypassed and the challenge revealed the flag.
 
 
 
