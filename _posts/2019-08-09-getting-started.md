@@ -33,6 +33,7 @@ The challenge simulated an **industrial control system (ICS)** environment. Our 
 
 ### Steps
 
+
 1. **Port scan the target**
    ```bash
    nmap -sC -sV -p- 10.10.154.123
@@ -56,6 +57,7 @@ The challenge simulated an **industrial control system (ICS)** environment. Our 
 
 5. **Result**  
    After disabling those features and refreshing, the gate authentication was effectively bypassed and the challenge revealed the flag.
+
 
 
 ![GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVrYWRxZzlxNjkwYWlkMHp4em8xNHB6OHYwM3BldXg3czJqdWFjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KMgPHp5bI60qDWPy1A/giphy.gif){: .w-80 .shadow .rounded-3 }
