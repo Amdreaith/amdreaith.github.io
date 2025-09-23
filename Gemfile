@@ -2,8 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins  # ← ADD THIS LINE
-gem "jekyll-remote-theme"
+gemspec
 
 gem "html-proofer", "~> 5.0", group: :test
 

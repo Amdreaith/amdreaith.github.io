@@ -30,22 +30,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Dreaith" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Hi there, I’m Dreaith! 👋" />
+<meta property="og:description" content="Hi there, I’m Dreaith! 👋" />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
 <meta property="og:site_name" content="Dreaith" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-09-23T01:42:57+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Dreaith" />
+<meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Dreaith","name":"Dreaith","sameAs":["https://github.com/Amdreaith"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","dateModified":"2025-09-23T01:42:57+08:00","datePublished":"2025-09-23T01:42:57+08:00","description":"Hi there, I’m Dreaith! 👋","headline":"About","name":"Dreaith","sameAs":["https://github.com/Amdreaith"],"url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Dreaith
+  <title>About | Dreaith
   </title>
 
   <!--
@@ -115,6 +116,9 @@
   
 
   
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+  
 
   <!-- Scripts -->
 
@@ -132,6 +136,9 @@
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -182,16 +189,9 @@
 
   
 
-  
-    
-
-    
-
-  
 
 
-
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/en.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -199,7 +199,7 @@
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/page.min.js"></script>
 
 
 
@@ -229,7 +229,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
@@ -257,7 +257,7 @@
         </li>
         <!-- .nav-item -->
       
-        <li class="nav-item">
+        <li class="nav-item active">
           <a href="/about/" class="nav-link">
             <i class="fa-fw fas fa-user-astronaut"></i>
             
@@ -344,9 +344,21 @@
       
 
       
-        <!-- index page -->
-        <span>Home</span>
+        
+          
+            <span>
+              <a href="/">Home</a>
+            </span>
 
+          
+        
+          
+            
+              <span>About</span>
+            
+
+          
+        
       
     </nav>
     <!-- endof #breadcrumb -->
@@ -356,7 +368,7 @@
     </button>
 
     <div id="topbar-title">
-      Dreaith
+      About
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -448,6 +460,14 @@
 
       
     
+      
+
+      
+      
+      
+
+      
+    
 
     <!-- take out classes -->
     
@@ -467,12 +487,16 @@
     
 
     
-      <!-- create the image wrapper -->
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
       
 
       
-      
+        <!-- create the image wrapper -->
+        
 
+        
+        
+      
     
 
     <!-- combine -->
@@ -509,59 +533,6 @@
 
       
     
-
-    <!-- take out classes -->
-    
-
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
       
 
       
@@ -589,73 +560,16 @@
     
 
     
-      <!-- create the image wrapper -->
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
       
 
       
+        <!-- create the image wrapper -->
+        
+
+        
+        
       
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
     
 
     <!-- combine -->
@@ -678,6 +592,49 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -703,329 +660,62 @@
 
 
 
-
-
-
-
-
-<!-- Get pinned posts on current page -->
-
-
-
-
-
-
-<!-- Get normal posts on current page -->
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
+<article class="px-1">
   
-    <article class="card-wrapper card">
-      <a href="/posts/write-a-new-post/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
+    
+    <h1 class="dynamic-title">
+      About
+    </h1>
+    <div class="content">
+      <h1 id="hi-there-im-dreaith-">Hi there, I’m Dreaith! 👋</h1>
 
-        
-          
-          
+<blockquote>
+  <p>“The curious explorer in a digital world.”</p>
+</blockquote>
 
-          
+<p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9mc2xwaHZtNGh4MG4ycWZlb2IxZnNoaHA3b2l5b2VwdzJ6bDlndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fS4cWezsJoXPYzLR45/giphy.gif" class="popup img-link w-50 shimmer"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9mc2xwaHZtNGh4MG4ycWZlb2IxZnNoaHA3b2l5b2VwdzJ6bDlndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fS4cWezsJoXPYzLR45/giphy.gif" alt="Cybersecurity Animated GIF" class="shadow rounded-3" loading="lazy"></a>
+<em>Exploring the digital universe, one line of code at a time!</em></p>
 
-          
+<p>I’m a cybersecurity enthusiast and tech learner on a journey to understand how things work and how to keep them safe. This blog is my digital notebook, where I document my learning process, share write-ups from CTF challenges, and reflect on my path in tech.</p>
 
-          
+<h2 id="-my-journey"><span class="me-2">🚀 My Journey</span><a href="#-my-journey" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-          <div class="col-md-5">
-            <div class="preview-img "><img src="/assets/img/favicons/1.png" alt="Trend Micro UCTF Capture the Flag"  loading="lazy"></div>
-          </div>
+<p>I started actively learning cybersecurity through TryHackMe and the Google Cybersecurity Professional Certificate. I believe that writing is one of the best ways to learn.</p>
 
-          
-        
+<p><strong>Sometimes I feel like a jack of all trades, but my true goal is to master the things I genuinely love most.</strong></p>
 
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">(UCTF) Capture the Flag Participant — Trend Micro</h1>
+<h2 id="-fun-facts-about-me"><span class="me-2">💫 Fun Facts About Me</span><a href="#-fun-facts-about-me" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-            <div class="card-text content mt-0 mb-3">
-              <p>Our team competed in the University Capture the Flag (UCTF) by Trend Micro, ranking 87th out of 199 teams. A valuable learning experience that sharpened our cybersecurity skills and teamwork.</p>
-            </div>
+<p>When I’m not diving into cybersecurity, you’ll find me:</p>
+<ul>
+  <li><strong>🎨 Painting</strong> - expressing creativity through colors and canvases.</li>
+  <li><strong>🎵 Jamming to music</strong> - I know some basic guitar chords, haha!</li>
+  <li><strong>🏃‍♂️ Going for runs</strong> - nothing clears the mind like a good run.</li>
+  <li><strong>📺 Watching self-help and motivation videos</strong> - as a girl, I love watching TED Talks, podcasts, and other inspiring content</li>
+  <li><strong>🏀 Shooting hoops</strong> - had so much fun playing basketball during school, but I know I suck at it 😄</li>
+  <li><strong>🗣️ Public speaking</strong> - I love speaking in public places.</li>
+</ul>
 
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+<h2 id="-find-me-online"><span class="me-2">🌐 Find Me Online</span><a href="#-find-me-online" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<ul>
+  <li><strong>GitHub:</strong> <a href="https://github.com/Amdreaith">@Amdreaith</a></li>
+  <li><strong>TryHackMe:</strong> <a href="https://tryhackme.com/p/Dreaith">@Dreaith</a></li>
+</ul>
+
+<hr />
+
+<p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmoybW0ydWs2dmJ0eHJxMW1tcjIxdnVvNDF1N3FxbWZoNmxlNzhtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQQRWxSlW1tWvWigA9/giphy.gif" class="popup img-link w-50 shimmer"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmoybW0ydWs2dmJ0eHJxMW1tcjIxdnVvNDF1N3FxbWZoNmxlNzhtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQQRWxSlW1tWvWigA9/giphy.gif" alt="GIF" class="shadow rounded-3" loading="lazy"></a></p>
+
+<blockquote>
+  <p><strong>This journey is about consistent learning, not perfection. There’s a lot to learn, and that is a privilege to study.</strong></p>
+</blockquote>
 
 
-
-
-<time
+    </div>
   
-  data-ts="1755151800"
-  data-df="ll"
-  
->
-  Aug 14, 2025
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      CTF,
-                      Trend Micro
-                  </span>
-                
-              </div>
-
-              
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span></span>
-                </div>
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/getting-started/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img "><img src="/assets/img/favicons/2.png" alt="TryHackMe Industrial Intrusion CTF"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">CTF Industrial Intrusion Participant (TryHackMe)</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>My first Capture the Flag (CTF) experience with a team, where we explored an industrial-themed environment, solved real-world cybersecurity challenges, and learned the value of teamwork.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1750942500"
-  data-df="ll"
-  
->
-  Jun 26, 2025
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      CTF,
-                      TryHackMe
-                  </span>
-                
-              </div>
-
-              
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span></span>
-                </div>
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/text-and-typography/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img "><img src="/assets/img/favicons/4.png" alt="Google Cybersecurity Certification"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Google Cybersecurity Certification</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>The Google Cybersecurity Professional Certificate provided me with a solid foundation in cybersecurity, including hands-on experience with Python, Bash, networking, and essential security practices.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1735183980"
-  data-df="ll"
-  
->
-  Dec 26, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Cybersecurity,
-                      Certification
-                  </span>
-                
-              </div>
-
-              
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span></span>
-                </div>
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/customize-the-favicon/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img "><img src="/assets/img/favicons/3.png" alt="Medium blogging journey"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Blog (Medium)</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>I started blogging on Medium to document my learning process, share write-ups, and reflect on my cybersecurity and tech journey.</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1746030840"
-  data-df="ll"
-  
->
-  May  1, 2025
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Blogging,
-                      WriteUps
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-</div>
-<!-- #post-list -->
-
-
+</article>
 
 
             
