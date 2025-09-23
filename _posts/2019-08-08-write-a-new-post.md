@@ -11,56 +11,52 @@ image:
 pin: true
 ---
 
-## Competition Overview  
+ 
+ ### Competition Overview
 
-In **August 2025**, our team participated in the **University Capture the Flag (UCTF)** competition hosted by **Trend Micro**.  
-The CTF featured challenges across multiple domains:  
+In August 2025, I had the opportunity to join my team in the University Capture the Flag (UCTF) competition hosted by Trend Micro.
+The event challenged us with problems in Reverse Engineering, Web Exploitation, Cryptography, and Forensics, each divided into Easy, Medium, and Hard levels.
 
-- Reverse Engineering  
-- Web Exploitation  
-- Cryptography  
-- Forensics  
+The competition was fast-paced, running for just one hour (3:00 PM – 4:00 PM), which tested not only our technical skills but also how well we could think, decide, and collaborate under pressure.
 
-The event was divided into three categories: **Easy, Medium, and Hard**. It ran from **3:00 PM to 4:00 PM**, giving participants only one hour to solve as many challenges as possible.  
+Some of the challenges were Read, Scan As Is, and OSINT: Follow the Train. With such limited time, I’ll admit I couldn’t go through all the questions. 
+That alone showed me how much preparation and quick thinking really matter in CTFs.
 
-Despite the intense competition, our team proudly placed **87th out of 199 teams worldwide**.  
+In the end, our team placed 87th out of 199 teams worldwide. Not bad, but I know we could’ve done better. I wish we had prepared more and communicated better. Honestly, 
+some members weren’t that interested in the field, and that made it harder. But for me personally, I’m glad I joined and gave it a try.
+
+Overall, it was a memorable and motivating experience. It opened my eyes to the importance of teamwork, preparation, and sharpening skills if I want to perform better in future CTFs.
+
+---
+### Key Highlights
+
+  > First experience competing in a Trend Micro-hosted CTF.
+
+  > Hands-on exposure to time-sensitive problem-solving and team collaboration.
+
+  > Discovered areas for growth in reverse engineering, forensics, and cryptography.
+
+  > Learned the importance of preparation, communication, and coordination under strict deadlines.
 
 ---
 
-## Key Highlights  
 
-- First experience competing in an **international CTF hosted by Trend Micro**.  
-- Gained practical exposure to **time-sensitive problem-solving and collaboration**.  
-- Identified areas for improvement, especially in **reverse engineering, forensics, and cryptography**.  
-- Strengthened **team communication and coordination** under strict deadlines.  
-
----
-
-## Example Challenge — Forensics  
-
-One memorable challenge involved analyzing a file that **contained another hidden file embedded within it**.  
-This tested our ability to:  
-
-- Use forensic tools to **extract and analyze hidden data**.  
-- Recognize file signatures and embedded structures.  
-- Apply critical thinking to unravel “a file inside a file” scenarios.  
-
-While we didn’t solve every challenge, exercises like this gave us valuable insights into **real-world digital forensics techniques**.  
 
 ![GIF](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjk3bTkzb2Mwc2lodnU4N3VmOXJ0aWdnM3RxNmxsMXhwM3Zkc3FrNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UQuqOTa4lqBVqlA3iC/giphy.gif){: .w-50 .shadow .rounded-3 }
 
 ---
 
 
+### Reflections
 
-## Reflections  
+Joining UCTF was both humbling and motivating. We didn’t rank near the top, but the experience gave me a lot to take away:
 
-Competing in UCTF was both humbling and motivating. Although we didn’t rank near the top, the experience:  
+  - It opened my eyes to what global-level competition feels like in cybersecurity.
 
-- Exposed us to **global competition standards** in cybersecurity.  
-- Showed the importance of **specialization** (reverse engineering, cryptography, forensics).  
-- Reinforced the mindset of **continuous learning and resilience** in CTFs.  
+  - I realized how important specialization is in areas like reverse engineering, cryptography, and forensics.
 
+  - Most importantly, it reminded me that CTFs aren’t just about winning — they’re about learning, growing, and building resilience with every challenge.
+    
 ---
 
 > *“Every CTF is not just about winning, but about growing — each challenge solved is a step toward mastery.”*  
