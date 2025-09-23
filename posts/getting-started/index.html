@@ -919,14 +919,14 @@ The challenge simulated an <strong>industrial control system (ICS)</strong> envi
 
 <h2 id="example-challenge--web-enumeration--forensics"><span class="me-2">Example Challenge</span><a href="#example-challenge--web-enumeration--forensics" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p><strong>Challenge OSINT 1 (short):</strong> </p>
+<p><strong>Challenge OSINT 1 (short):</strong> 
+“Hexline, we need your help investigating the phishing attack from 3 months ago. We believe the threat actor managed to hijack our domain virelia-water.it.com and used it to host some of their infrastructure at the time. Use your OSINT skills to find information about the infrastructure they used during their campaign."
+</p>
 
 <h3 id="reproduction-steps-what-i-did"><span class="me-2">Steps :</span><a href="#reproduction-steps-what-i-did" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
 <ul>
-  <li>OSINT 1</li>
-“Hexline, we need your help investigating the phishing attack from 3 months ago. We believe the threat actor managed to hijack our domain virelia-water.it.com and used it to host some of their infrastructure at the time. Use your OSINT skills to find information about the infrastructure they used during their campaign."
-  <li>
+   <li>
     During the challenge, a critical piece of information was identified: 
     a link to a GitHub repository: 
     <a href="https://github.com/solstice-tech1/ot-auth-mirror/blob/main/index.html" target="_blank">
@@ -935,10 +935,10 @@ The challenge simulated an <strong>industrial control system (ICS)</strong> envi
     This suggested that the website's source code, or at least a relevant part of it, was hosted there.
   </li>
 
-  <li>
+ 
     <img width="484" height="225" alt="screenshot" 
          src="https://github.com/user-attachments/assets/42af9184-66cf-410e-8c3a-70f6bb48b0af" />
-  </li>
+
 
   <li>
     Initially, an attempt was made to directly paste or interact with this source on a live website, 
@@ -949,10 +949,10 @@ The challenge simulated an <strong>industrial control system (ICS)</strong> envi
     This indicated that the raw HTML was not intended for direct use in its current form.
   </li>
 
-  <li>
+
     <img width="573" height="323" alt="screenshot" 
          src="https://github.com/user-attachments/assets/45c14fb1-3989-4e34-8e16-287597c363a9" />
-  </li>
+
 
   <li>
     Recognizing this, the next step involved examining the content for encoding. 
