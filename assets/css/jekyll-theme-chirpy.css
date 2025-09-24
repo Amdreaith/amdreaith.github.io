@@ -1108,10 +1108,10 @@ footer a:hover,
     color: #90a959;
   }
   html[data-mode="light"] {
-    --main-bg: linear-gradient(135deg, #ffffff 0%, #ffe6f2 50%, #a8a8a8 100%);
-    --mask-bg: #ff9ebe;
+    --main-bg: linear-gradient(135deg, #ffffff 0%, #fae3cd 50%, #362502 80%);
+    --mask-bg: #ffebd4;
     --main-border-color: #ff7abd;
-    --text-color: #333333;
+    --text-color: #302f2f;
     --text-muted-color: #666666;
     --text-muted-highlight-color: inherit;
     --heading-color: #000000;
