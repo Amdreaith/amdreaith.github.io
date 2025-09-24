@@ -86,8 +86,8 @@ footer a:hover,
 #topbar #breadcrumb a:hover,
 .post-meta a:not([class]):hover,
 .content a:not(.img-link):hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: #8B7355 !important;
+  border-bottom: 1px solid #8B7355;
   text-decoration: none;
 }
 #search-results a,
@@ -306,8 +306,8 @@ footer a:hover,
 #topbar #breadcrumb a:hover,
 .post-meta a:not([class]):hover,
 .content a:not(.img-link):hover {
-    color: #3182ce !important;
-    border-bottom: 1px solid #3182ce;
+    color: #8B7355 !important;
+    border-bottom: 1px solid #8B7355;
     text-decoration: none;
 }
 
@@ -320,7 +320,7 @@ footer a:hover,
 /* Keep all other CSS exactly the same - only colors updated above */
   html:not([data-mode]) [class^="prompt-"],
   html[data-mode="light"] [class^="prompt-"] {
-    --link-underline-color: rgb(255 179 217);
+    --link-underline-color: rgb(238 228 218);
   }
   html:not([data-mode]) .dark,
   html[data-mode="light"] .dark {
@@ -439,11 +439,11 @@ footer a:hover,
   }
   html:not([data-mode]) .highlight .nl,
   html[data-mode="light"] .highlight .nl {
-    color: #ff4da6;
+    color: #A0845C;
   }
   html:not([data-mode]) .highlight .py,
   html[data-mode="light"] .highlight .py {
-    color: #ff66b2;
+    color: #B59660;
   }
   html:not([data-mode]) .highlight .nv,
   html:not([data-mode]) .highlight .vc,
@@ -455,22 +455,22 @@ footer a:hover,
   html[data-mode="light"] .highlight .vg,
   html[data-mode="light"] .highlight .vi,
   html[data-mode="light"] .highlight .vm {
-    color: #ff0090;
+    color: #8B7355;
   }
   html:not([data-mode]) .highlight .o,
   html:not([data-mode]) .highlight .ow,
   html[data-mode="light"] .highlight .o,
   html[data-mode="light"] .highlight .ow {
-    color: #ff4da6;
+    color: #A0845C;
   }
   html:not([data-mode]) .highlight .gh,
   html[data-mode="light"] .highlight .gh {
-    color: #ff66b2;
+    color: #B59660;
     font-weight: bold;
   }
   html:not([data-mode]) .highlight .gu,
   html[data-mode="light"] .highlight .gu {
-    color: #ff66b2;
+    color: #B59660;
     font-weight: bold;
   }
   html:not([data-mode]) .highlight .s,
