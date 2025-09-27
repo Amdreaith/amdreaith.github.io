@@ -1,196 +1,242 @@
-/* ... (keep all the CSS rules above the color scheme definitions) ... */
+
 
 :root{
     font-size:16px
 }
+::-webkit-input-placeholder{
+	color:var(--text-muted-color) !important
+}
+::-moz-placeholder{
+	color:var(--text-muted-color) !important
+}
+:-ms-input-placeholder{
+	color:var(--text-muted-color) !important
+}
+::-ms-input-placeholder{
+	color:var(--text-muted-color) !important
+}
+::placeholder{
+	color:var(--text-muted-color) !important
+}
+:focus::-webkit-input-placeholder{
+	opacity:.6
+}
+:focus::-moz-placeholder{
+	opacity:.6
+}
+:focus:-ms-input-placeholder{
+	opacity:.6
+}
+:focus::-ms-input-placeholder{
+	opacity:.6
+}
+:focus::placeholder{
+	opacity:.6
+}
+header .post-desc,#toc-bar .label,#search-results a,h1,h2,h3,h4,h5{
+	color:var(--heading-color);
+	font-weight:400;
+	font-family:Lato,"Microsoft Yahei",sans-serif;
+	scroll-margin-top:3.5rem
+}
+h2 .anchor,h3 .anchor,h4 .anchor,h5 .anchor{
+	font-size:80%
+}
+@media(hover: hover){
+	h2 .anchor,h3 .anchor,h4 .anchor,h5 .anchor{
+		visibility:hidden;
+		opacity:0;
+		transition:opacity .25s ease-in,visibility 0s ease-in .25s
+	}
+	h2:hover .anchor,h3:hover .anchor,h4:hover .anchor,h5:hover .anchor{
+		visibility:visible;
+		opacity:1;
+		transition:opacity .25s ease-in,visibility 0s ease-in 0s
+	}
+}
+.post-tags .post-tag:hover,.tag:hover{
+	background:var(--tag-hover);
+	border-color:var(--tag-hover);
+	transition:background .35s ease-in-out
+}
 
-/* ====== REPLACE THE ENTIRE COLOR SCHEME SECTION WITH THIS ====== */
-
-/* Professional & Cutesy Purple Light Theme */
+/* Starry Night Light Theme - Inspired by daytime sky colors */
 html:not([data-mode]), html[data-mode=light] {
-    /* Main Background - Soft lavender to white gradient */
-    --main-bg: linear-gradient(135deg, #f8f4ff 0%, #ffffff 25%, #fff0f8 50%, #ffffff 75%, #f8f4ff 100%);
-    --mask-bg: #ffb6d9;
-    --main-border-color: #e6c8ff;
+    /* Main Background - Daytime sky gradient */
+    --main-bg: linear-gradient(135deg, #e6f0ff 0%, #b3d4ff 25%, #87ceeb 50%, #b3d4ff 75%, #e6f0ff 100%);
+    --mask-bg: #4169e1;
+    --main-border-color: #87ceeb;
     
-    /* Text Colors - Soft dark tones */
-    --text-color: #5a4a6a;
-    --text-muted-color: #8a7a9a;
-    --text-muted-highlight-color: #4a3a5a;
-    --heading-color: #3a2a4a;
-    --label-color: #6a5a7a;
+    /* Text Colors - Deep blues and navy */
+    --text-color: #2c3e50;
+    --text-muted-color: #5d6d7e;
+    --text-muted-highlight-color: #1a252f;
+    --heading-color: #1e3a5f;
+    --label-color: #34495e;
     
-    /* Accent Colors - Soft pinks and purples */
-    --link-color: #ff85c8;
-    --link-underline-color: #ffa3d6;
-    --blockquote-border-color: #d4b2ff;
-    --blockquote-text-color: #7a6a8a;
+    /* Accent Colors - Royal blue and golden yellows */
+    --link-color: #e6b422;
+    --link-underline-color: #f1c40f;
+    --blockquote-border-color: #3498db;
+    --blockquote-text-color: #566573;
     
     /* UI Elements */
     --button-bg: #ffffff;
-    --btn-border-color: #f0e6ff;
-    --btn-backtotop-color: #8a7a9a;
-    --btn-backtotop-border-color: #f8f4ff;
+    --btn-border-color: #d6eaf8;
+    --btn-backtotop-color: #5d6d7e;
+    --btn-backtotop-border-color: #ebf5fb;
     
     /* Interactive Elements */
-    --checkbox-color: #e0d6ff;
-    --checkbox-checked-color: #ff85c8;
-    --btn-patinator-text-color: #ff85c8;
-    --btn-paginator-hover-color: #ffa3d6;
-    --toc-highlight: #ff85c8;
-    --btn-share-hover-color: #ff85c8;
+    --checkbox-color: #d4e6f1;
+    --checkbox-checked-color: #e6b422;
+    --btn-patinator-text-color: #e6b422;
+    --btn-paginator-hover-color: #f1c40f;
+    --toc-highlight: #e6b422;
+    --btn-share-hover-color: #e6b422;
     
     /* Images & Media */
-    --img-bg: radial-gradient(circle, #ffffff 0%, #f8f4ff 100%);
-    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(255,182,217,30%) 50%, rgba(255,255,255,0%) 100%);
+    --img-bg: radial-gradient(circle, #ffffff 0%, #e6f0ff 100%);
+    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(173,216,230,30%) 50%, rgba(255,255,255,0%) 100%);
     
-    /* Sidebar - Professional dark with cute accents */
-    --sidebar-bg: linear-gradient(180deg, #3a2a4a 0%, #5a4a6a 100%);
-    --sidebar-border-color: #6a5a7a;
-    --sidebar-muted-color: #b8a8c8;
-    --sidebar-active-color: #ff85c8;
-    --sidebar-hover-bg: rgba(255, 133, 200, 0.15);
-    --sidebar-btn-bg: rgba(58, 42, 74, 0.8);
-    --sidebar-btn-color: #d8c8e8;
-    --avatar-border-color: #ff85c8;
+    /* Sidebar - Deep night blue with golden accents */
+    --sidebar-bg: linear-gradient(180deg, #1e3a5f 0%, #2c3e50 100%);
+    --sidebar-border-color: #34495e;
+    --sidebar-muted-color: #aeb6bf;
+    --sidebar-active-color: #e6b422;
+    --sidebar-hover-bg: rgba(230, 180, 34, 0.15);
+    --sidebar-btn-bg: rgba(30, 58, 95, 0.8);
+    --sidebar-btn-color: #d6dbdf;
+    --avatar-border-color: #e6b422;
     
     /* Topbar */
-    --topbar-bg: linear-gradient(90deg, rgba(255, 240, 248, 0.98) 0%, rgba(248, 244, 255, 0.98) 100%);
-    --topbar-text-color: #ff85c8;
+    --topbar-bg: linear-gradient(90deg, rgba(235, 245, 251, 0.98) 0%, rgba(230, 240, 255, 0.98) 100%);
+    --topbar-text-color: #e6b422;
     
     /* Search */
-    --search-border-color: #e6c8ff;
-    --search-icon-color: #ff85c8;
-    --input-focus-border-color: #ff85c8;
+    --search-border-color: #87ceeb;
+    --search-icon-color: #e6b422;
+    --input-focus-border-color: #e6b422;
     
     /* Cards & Content */
-    --card-hover-bg: linear-gradient(135deg, #fff0f8 0%, #f8f4ff 100%);
-    --footnote-target-bg: #fff0f8;
-    --card-shadow: 0 8px 32px rgba(255, 133, 200, 0.15), 
-                   0 0 0 1px rgba(255, 163, 214, 0.2), 
-                   0 0 40px rgba(255, 133, 200, 0.08) inset;
+    --card-hover-bg: linear-gradient(135deg, #ebf5fb 0%, #e6f0ff 100%);
+    --footnote-target-bg: #ebf5fb;
+    --card-shadow: 0 8px 32px rgba(230, 180, 34, 0.15), 
+                   0 0 0 1px rgba(241, 196, 15, 0.2), 
+                   0 0 40px rgba(230, 180, 34, 0.08) inset;
     
     /* Tags & Categories */
-    --tag-border: #ff85c8;
-    --tag-hover: #ffa3d6;
-    --search-tag-bg: #fff0f8;
-    --categories-border: rgba(255, 133, 200, 0.4);
-    --categories-hover-bg: #ffa3d6;
+    --tag-border: #e6b422;
+    --tag-hover: #f1c40f;
+    --search-tag-bg: #ebf5fb;
+    --categories-border: rgba(230, 180, 34, 0.4);
+    --categories-hover-bg: #f1c40f;
     
     /* Timeline */
-    --timeline-color: rgba(255, 133, 200, 0.15);
-    --timeline-node-bg: #ff85c8;
+    --timeline-color: rgba(230, 180, 34, 0.15);
+    --timeline-node-bg: #e6b422;
     --timeline-year-dot-color: #ffffff;
     
     /* Code & Technical */
-    --language-border-color: #f0e6ff;
-    --highlight-bg-color: #faf8ff;
-    --highlighter-rouge-color: #5a4a6a;
-    --highlight-lineno-color: #c8b8d8;
-    --inline-code-bg: rgba(255, 133, 200, 0.1);
-    --code-color: #5a4a6a;
-    --code-header-text-color: #b8a8c8;
-    --code-header-muted-color: #f0e6ff;
-    --code-header-icon-color: #d8c8e8;
-    --clipboard-checked-color: #85d685;
-    
-    /* Site Identity */
-    --site-title-color: #ffffff;
-    --site-subtitle-color: #d8c8e8;
+    --language-border-color: #d6eaf8;
+    --highlight-bg-color: #f8fbff;
+    --highlighter-rouge-color: #2c3e50;
+    --highlight-lineno-color: #bdc3c7;
+    --inline-code-bg: rgba(230, 180, 34, 0.1);
+    --code-color: #2c3e50;
+    --code-header-text-color: #aeb6bf;
+    --code-header-muted-color: #d6eaf8;
+    --code-header-icon-color: #d6dbdf;
+    --clipboard-checked-color: #27ae60;
 }
 
-/* Professional & Cutesy Purple Dark Theme */
+/* Starry Night Dark Theme - The iconic painting colors */
 html[data-mode=dark] {
-    /* Main Background - Soft lavender to deep plum gradient */
-    --main-bg: linear-gradient(135deg, #2d1b69 0%, #6d3b9e 25%, #8b5fb3 50%, #6d3b9e 75%, #2d1b69 100%);
+    /* Main Background - Starry night gradient */
+    --main-bg: linear-gradient(135deg, #0a1931 0%, #1e3a5f 25%, #2c3e50 50%, #1e3a5f 75%, #0a1931 100%);
     
-    /* Text Colors - Soft pastels */
-    --text-color: #f0e6ff;
-    --text-muted-color: #d8c8ff;
+    /* Text Colors - Soft whites and blues */
+    --text-color: #e8f4f8;
+    --text-muted-color: #aeb6bf;
     --text-muted-highlight-color: #ffffff;
     --heading-color: #ffffff;
-    --label-color: #e6daff;
+    --label-color: #d6dbdf;
     
-    /* Accent Colors - Soft pinks and purples */
-    --link-color: #ff9ec9;
-    --link-underline-color: #ffb3d9;
-    --sidebar-active-color: #ff85a2;
-    --toc-highlight: #ff9ec9;
+    /* Accent Colors - Starry night yellows and blues */
+    --link-color: #e6b422;
+    --link-underline-color: #f1c40f;
+    --sidebar-active-color: #e6b422;
+    --toc-highlight: #e6b422;
     
     /* UI Elements */
-    --main-border-color: #8b5fb3;
-    --blockquote-border-color: #b38bcc;
-    --blockquote-text-color: #e6daff;
-    --button-bg: rgba(107, 59, 158, 0.3);
-    --btn-border-color: #8b5fb3;
-    --btn-backtotop-color: #f0e6ff;
-    --btn-backtotop-border-color: #6d3b9e;
+    --main-border-color: #3498db;
+    --blockquote-border-color: #2980b9;
+    --blockquote-text-color: #d6dbdf;
+    --button-bg: rgba(30, 58, 95, 0.3);
+    --btn-border-color: #3498db;
+    --btn-backtotop-color: #e8f4f8;
+    --btn-backtotop-border-color: #1e3a5f;
     
     /* Interactive States */
-    --tag-hover: rgba(255, 158, 201, 0.2);
-    --sidebar-hover-bg: rgba(255, 133, 162, 0.15);
-    --btn-paginator-hover-color: rgba(139, 95, 179, 0.5);
-    --btn-share-hover-color: #ff9ec9;
-    --categories-hover-bg: rgba(255, 158, 201, 0.2);
+    --tag-hover: rgba(230, 180, 34, 0.2);
+    --sidebar-hover-bg: rgba(230, 180, 34, 0.15);
+    --btn-paginator-hover-color: rgba(52, 152, 219, 0.5);
+    --btn-share-hover-color: #e6b422;
+    --categories-hover-bg: rgba(230, 180, 34, 0.2);
     
-    /* Sidebar - Deep purple */
-    --sidebar-bg: linear-gradient(180deg, #1a1033 0%, #2d1b69 100%);
-    --sidebar-border-color: #4a2a8c;
-    --sidebar-muted-color: #b38bcc;
-    --sidebar-btn-bg: rgba(45, 27, 105, 0.5);
-    --sidebar-btn-color: #d8c8ff;
+    /* Sidebar - Deep night sky */
+    --sidebar-bg: linear-gradient(180deg, #0a1931 0%, #1e3a5f 100%);
+    --sidebar-border-color: #2c3e50;
+    --sidebar-muted-color: #7f8c8d;
+    --sidebar-btn-bg: rgba(10, 25, 49, 0.5);
+    --sidebar-btn-color: #bdc3c7;
     
     /* Topbar */
-    --topbar-bg: rgba(45, 27, 105, 0.95);
+    --topbar-bg: rgba(10, 25, 49, 0.95);
     --topbar-text-color: #ffffff;
     
     /* Cards & Panels */
-    --card-hover-bg: linear-gradient(135deg, rgba(139, 95, 179, 0.3) 0%, rgba(255, 158, 201, 0.2) 100%);
-    --footnote-target-bg: rgba(255, 158, 201, 0.1);
-    --card-shadow: 0 8px 32px rgba(109, 59, 158, 0.2), 
-                   0 0 0 1px rgba(255, 158, 201, 0.1), 
-                   0 0 40px rgba(255, 158, 201, 0.1) inset;
+    --card-hover-bg: linear-gradient(135deg, rgba(52, 152, 219, 0.3) 0%, rgba(230, 180, 34, 0.2) 100%);
+    --footnote-target-bg: rgba(230, 180, 34, 0.1);
+    --card-shadow: 0 8px 32px rgba(30, 58, 95, 0.3), 
+                   0 0 0 1px rgba(230, 180, 34, 0.15), 
+                   0 0 40px rgba(230, 180, 34, 0.1) inset;
     
     /* Code & Technical */
-    --highlight-bg-color: #2a1a50;
-    --highlighter-rouge-color: #ffd6eb;
-    --inline-code-bg: rgba(255, 158, 201, 0.15);
-    --code-color: #ffd6eb;
+    --highlight-bg-color: #1a252f;
+    --highlighter-rouge-color: #f8f9f9;
+    --inline-code-bg: rgba(230, 180, 34, 0.15);
+    --code-color: #f8f9f9;
     
     /* Images & Media */
-    --img-bg: radial-gradient(circle, #3d2373 0%, #2d1b69 100%);
-    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(255,158,201,30%) 50%, rgba(255,255,255,0%) 100%);
+    --img-bg: radial-gradient(circle, #1e3a5f 0%, #0a1931 100%);
+    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(230,180,34,30%) 50%, rgba(255,255,255,0%) 100%);
     
-    /* Additional Cutesy Elements */
-    --checkbox-checked-color: #ff85a2;
-    --avatar-border-color: #ff9ec9;
-    --search-border-color: #8b5fb3;
-    --search-icon-color: #ff9ec9;
-    --input-focus-border-color: #ff85a2;
-    --btn-patinator-text-color: #ffd6eb;
-    --tag-border: #ff9ec9;
-    --search-tag-bg: rgba(139, 95, 179, 0.3);
-    --categories-border: rgba(255, 158, 201, 0.3);
-    --timeline-color: rgba(255, 158, 201, 0.15);
-    --timeline-node-bg: #ff85a2;
-    --language-border-color: #6d3b9e;
-    --code-header-text-color: #b38bcc;
-    --code-header-muted-color: #4a2a8c;
-    --code-header-icon-color: #8b5fb3;
-    --clipboard-checked-color: #85ff9e;
+    /* Additional Starry Night Elements */
+    --checkbox-checked-color: #e6b422;
+    --avatar-border-color: #e6b422;
+    --search-border-color: #3498db;
+    --search-icon-color: #e6b422;
+    --input-focus-border-color: #e6b422;
+    --btn-patinator-text-color: #f1c40f;
+    --tag-border: #e6b422;
+    --search-tag-bg: rgba(52, 152, 219, 0.3);
+    --categories-border: rgba(230, 180, 34, 0.3);
+    --timeline-color: rgba(230, 180, 34, 0.15);
+    --timeline-node-bg: #e6b422;
+    --language-border-color: #1e3a5f;
+    --code-header-text-color: #7f8c8d;
+    --code-header-muted-color: #2c3e50;
+    --code-header-icon-color: #3498db;
+    --clipboard-checked-color: #2ecc71;
 }
 
-/* Remove all the old conflicting color scheme definitions below */
-/* DELETE everything from @media(prefers-color-scheme: light) to the end of the file */
-/* ... (keep all the CSS rules after the color scheme definitions) ... */
-
-/* Add this fix for the hover color issue */
+/* Fix for hover colors to match Starry Night theme */
 #page-category a:hover,#page-tag a:hover,#access-lastmod a:hover,.post-tail-wrapper .license-wrapper>a:hover,#search-results a:hover,footer a:hover,#topbar #breadcrumb a:hover,.post-meta a:not([class]):hover,.content a:not(.img-link):hover{
-    color: #ff85c8 !important; /* Changed from #d2603a to match our theme */
-    border-bottom:1px solid #ff85c8;
+    color: #e6b422 !important; /* Changed to Starry Night gold */
+    border-bottom:1px solid #e6b422;
     text-decoration:none
 }
-	}
+
 	html:not([data-mode]) [class^=prompt-],html[data-mode=light] [class^=prompt-]{
 		--link-underline-color: rgb(255 179 217)
 	}
