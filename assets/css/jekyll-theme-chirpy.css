@@ -1,157 +1,12 @@
-::-webkit-input-placeholder{
-	color:var(--text-muted-color) !important
-}
-::-moz-placeholder{
-	color:var(--text-muted-color) !important
-}
-:-ms-input-placeholder{
-	color:var(--text-muted-color) !important
-}
-::-ms-input-placeholder{
-	color:var(--text-muted-color) !important
-}
-::placeholder{
-	color:var(--text-muted-color) !important
-}
-:focus::-webkit-input-placeholder{
-	opacity:.6
-}
-:focus::-moz-placeholder{
-	opacity:.6
-}
-:focus:-ms-input-placeholder{
-	opacity:.6
-}
-:focus::-ms-input-placeholder{
-	opacity:.6
-}
-:focus::placeholder{
-	opacity:.6
-}
-header .post-desc,#toc-bar .label,#search-results a,h1,h2,h3,h4,h5{
-	color:var(--heading-color);
-	font-weight:400;
-	font-family:Lato,"Microsoft Yahei",sans-serif;
-	scroll-margin-top:3.5rem
-}
-h2 .anchor,h3 .anchor,h4 .anchor,h5 .anchor{
-	font-size:80%
-}
-@media(hover: hover){
-	h2 .anchor,h3 .anchor,h4 .anchor,h5 .anchor{
-		visibility:hidden;
-		opacity:0;
-		transition:opacity .25s ease-in,visibility 0s ease-in .25s
-	}
-	h2:hover .anchor,h3:hover .anchor,h4:hover .anchor,h5:hover .anchor{
-		visibility:visible;
-		opacity:1;
-		transition:opacity .25s ease-in,visibility 0s ease-in 0s
-	}
-}
-.post-tags .post-tag:hover,.tag:hover{
-	background:var(--tag-hover);
-	border-color:var(--tag-hover);
-	transition:background .35s ease-in-out
-}
-.table-wrapper>table thead th,.table-wrapper>table tbody tr td{
-	padding:.4rem 1rem;
-	font-size:95%;
-	white-space:nowrap
-}
-#page-category a:hover,#page-tag a:hover,#access-lastmod a:hover,.post-tail-wrapper .license-wrapper>a:hover,#search-results a:hover,footer a:hover,#topbar #breadcrumb a:hover,.post-meta a:not([class]):hover,.content a:not(.img-link):hover{
-	color:#d2603a !important;
-	border-bottom:1px solid #d2603a;
-	text-decoration:none
-}
-#search-results a,#search-hints .post-tag,a,.post-tags .post-tag:hover,.tag:hover{
-	color:var(--link-color)
-}
-.post-tail-wrapper .post-meta a:not(:hover),.content a:not(.img-link){
-	border-bottom:1px solid var(--link-underline-color)
-}
-#sidebar .profile-wrapper,#sidebar .site-title,#sidebar .sidebar-bottom a{
-	transition:all .3s ease-in-out
-}
-#sidebar .sidebar-bottom .icon-border,.code-header,i.far,i.fas,.content a.popup{
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none
-}
-#page-category ul>li>a,#page-tag ul>li>a,#search-results a,#access-lastmod a,main .categories a:not(:hover),main #tags a:not(:hover),main #archives a:not(:hover){
-	border-bottom:none
-}
-.post-tail-wrapper .share-wrapper .share-icons button,#search-cancel,.code-header button{
-	cursor:pointer
-}
-#related-posts time,#post-list .card .card-body .post-meta em,.post-meta em{
-	font-style:normal
-}
-.categories.card,.categories .list-group,.highlight,div[class^=language-],.code-header button,blockquote[class^=prompt-],.preview-img,.preview-img img,.post-preview,.post-preview::before,.embed-video{
-	border-radius:10px
-}
-.content a.popup+em,.embed-video+em,.embed-audio+em{
-	display:block;
-	text-align:center;
-	font-style:normal;
-	font-size:80%;
-	padding:0;
-	color:#6d6c6c
-}
-#sidebar a,#sidebar .sidebar-bottom #mode-toggle{
-	color:var(--sidebar-muted-color);
-	-webkit-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none
-}
-#related-posts .card h4,#post-list .card .card-body .card-title,#post-list .card .card-body .card-text.content p{
-	display:-webkit-box;
-	overflow:hidden;
-	text-overflow:ellipsis;
-	-webkit-line-clamp:2;
-	-webkit-box-orient:vertical
-}
-#archives ul li,#toc-wrapper ul .toc-link,#related-posts p,#post-list .card .card-body .post-meta>div:first-child,#search-results>article>p{
-	overflow:hidden;
-	text-overflow:ellipsis;
-	white-space:nowrap
-}
-header .post-meta em,header .post-meta time,.post-tail-wrapper .license-wrapper>a,footer a,footer em{
-	color:var(--text-muted-highlight-color);
-	font-weight:600
-}
-.post-tail-wrapper,.post-tail-wrapper .license-wrapper span:last-child,.post-meta{
-	font-size:.85rem
-}
-#related-posts time,footer{
-	font-size:.8rem
-}
-sup:target,.footnotes>ol>li:target{
-	background-color:var(--footnote-target-bg);
-	width:-moz-fit-content;
-	width:-webkit-fit-content;
-	width:fit-content;
-	transition:background-color 1.75s ease-in-out
-}
-#toc-bar button i,#topbar button i,#toc-popup .header button i{
-	color:#999
-}
-.highlight,figure.highlight,div[class^=language-]{
-	background-color:var(--highlight-bg-color)
-}
-td.rouge-code{
-	padding-left:1rem;
-	padding-right:1.5rem
-}
-#toc-wrapper>*,.access>section{
-	border-left:1px solid var(--main-border-color)
-}
+/* ... (keep all the CSS rules above the color scheme definitions) ... */
+
 :root{
-	font-size:16px
+    font-size:16px
 }
-@media(prefers-color-scheme: light){
+
+/* ====== REPLACE THE ENTIRE COLOR SCHEME SECTION WITH THIS ====== */
+
+/* Professional & Cutesy Purple Light Theme */
 html:not([data-mode]), html[data-mode=light] {
     /* Main Background - Soft lavender to white gradient */
     --main-bg: linear-gradient(135deg, #f8f4ff 0%, #ffffff 25%, #fff0f8 50%, #ffffff 75%, #f8f4ff 100%);
@@ -242,7 +97,99 @@ html:not([data-mode]), html[data-mode=light] {
     /* Site Identity */
     --site-title-color: #ffffff;
     --site-subtitle-color: #d8c8e8;
+}
 
+/* Professional & Cutesy Purple Dark Theme */
+html[data-mode=dark] {
+    /* Main Background - Soft lavender to deep plum gradient */
+    --main-bg: linear-gradient(135deg, #2d1b69 0%, #6d3b9e 25%, #8b5fb3 50%, #6d3b9e 75%, #2d1b69 100%);
+    
+    /* Text Colors - Soft pastels */
+    --text-color: #f0e6ff;
+    --text-muted-color: #d8c8ff;
+    --text-muted-highlight-color: #ffffff;
+    --heading-color: #ffffff;
+    --label-color: #e6daff;
+    
+    /* Accent Colors - Soft pinks and purples */
+    --link-color: #ff9ec9;
+    --link-underline-color: #ffb3d9;
+    --sidebar-active-color: #ff85a2;
+    --toc-highlight: #ff9ec9;
+    
+    /* UI Elements */
+    --main-border-color: #8b5fb3;
+    --blockquote-border-color: #b38bcc;
+    --blockquote-text-color: #e6daff;
+    --button-bg: rgba(107, 59, 158, 0.3);
+    --btn-border-color: #8b5fb3;
+    --btn-backtotop-color: #f0e6ff;
+    --btn-backtotop-border-color: #6d3b9e;
+    
+    /* Interactive States */
+    --tag-hover: rgba(255, 158, 201, 0.2);
+    --sidebar-hover-bg: rgba(255, 133, 162, 0.15);
+    --btn-paginator-hover-color: rgba(139, 95, 179, 0.5);
+    --btn-share-hover-color: #ff9ec9;
+    --categories-hover-bg: rgba(255, 158, 201, 0.2);
+    
+    /* Sidebar - Deep purple */
+    --sidebar-bg: linear-gradient(180deg, #1a1033 0%, #2d1b69 100%);
+    --sidebar-border-color: #4a2a8c;
+    --sidebar-muted-color: #b38bcc;
+    --sidebar-btn-bg: rgba(45, 27, 105, 0.5);
+    --sidebar-btn-color: #d8c8ff;
+    
+    /* Topbar */
+    --topbar-bg: rgba(45, 27, 105, 0.95);
+    --topbar-text-color: #ffffff;
+    
+    /* Cards & Panels */
+    --card-hover-bg: linear-gradient(135deg, rgba(139, 95, 179, 0.3) 0%, rgba(255, 158, 201, 0.2) 100%);
+    --footnote-target-bg: rgba(255, 158, 201, 0.1);
+    --card-shadow: 0 8px 32px rgba(109, 59, 158, 0.2), 
+                   0 0 0 1px rgba(255, 158, 201, 0.1), 
+                   0 0 40px rgba(255, 158, 201, 0.1) inset;
+    
+    /* Code & Technical */
+    --highlight-bg-color: #2a1a50;
+    --highlighter-rouge-color: #ffd6eb;
+    --inline-code-bg: rgba(255, 158, 201, 0.15);
+    --code-color: #ffd6eb;
+    
+    /* Images & Media */
+    --img-bg: radial-gradient(circle, #3d2373 0%, #2d1b69 100%);
+    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(255,158,201,30%) 50%, rgba(255,255,255,0%) 100%);
+    
+    /* Additional Cutesy Elements */
+    --checkbox-checked-color: #ff85a2;
+    --avatar-border-color: #ff9ec9;
+    --search-border-color: #8b5fb3;
+    --search-icon-color: #ff9ec9;
+    --input-focus-border-color: #ff85a2;
+    --btn-patinator-text-color: #ffd6eb;
+    --tag-border: #ff9ec9;
+    --search-tag-bg: rgba(139, 95, 179, 0.3);
+    --categories-border: rgba(255, 158, 201, 0.3);
+    --timeline-color: rgba(255, 158, 201, 0.15);
+    --timeline-node-bg: #ff85a2;
+    --language-border-color: #6d3b9e;
+    --code-header-text-color: #b38bcc;
+    --code-header-muted-color: #4a2a8c;
+    --code-header-icon-color: #8b5fb3;
+    --clipboard-checked-color: #85ff9e;
+}
+
+/* Remove all the old conflicting color scheme definitions below */
+/* DELETE everything from @media(prefers-color-scheme: light) to the end of the file */
+/* ... (keep all the CSS rules after the color scheme definitions) ... */
+
+/* Add this fix for the hover color issue */
+#page-category a:hover,#page-tag a:hover,#access-lastmod a:hover,.post-tail-wrapper .license-wrapper>a:hover,#search-results a:hover,footer a:hover,#topbar #breadcrumb a:hover,.post-meta a:not([class]):hover,.content a:not(.img-link):hover{
+    color: #ff85c8 !important; /* Changed from #d2603a to match our theme */
+    border-bottom:1px solid #ff85c8;
+    text-decoration:none
+}
 	}
 	html:not([data-mode]) [class^=prompt-],html[data-mode=light] [class^=prompt-]{
 		--link-underline-color: rgb(255 179 217)
