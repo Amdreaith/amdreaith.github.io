@@ -59,271 +59,178 @@ h2 .anchor,h3 .anchor,h4 .anchor,h5 .anchor{
 	border-color:var(--tag-hover);
 	transition:background .35s ease-in-out
 }
-
-/* ====== STARRY NIGHT BY VINCENT VAN GOGH - ENHANCED ====== */
-
-/* Starry Night Light Theme - Daytime with cloud-like gradients */
-html:not([data-mode]), html[data-mode=light] {
-    /* Main Background - Swirling sky gradient */
-    --main-bg: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 20%, #90caf9 40%, #64b5f6 60%, #42a5f5 80%, #2196f3 100%);
-    --mask-bg: #5c6bc0;
-    --main-border-color: #90caf9;
-    
-    /* Text Colors */
-    --text-color: #1a237e;
-    --text-muted-color: #283593;
-    --text-muted-highlight-color: #0d47a1;
-    --heading-color: #0d47a1;
-    --label-color: #1a237e;
-    
-    /* Accent Colors */
-    --link-color: #ffb300;
-    --link-underline-color: #ffca28;
-    --blockquote-border-color: #5c6bc0;
-    --blockquote-text-color: #3949ab;
-    
-    /* UI Elements */
-    --button-bg: rgba(255, 255, 255, 0.8);
-    --btn-border-color: #e3f2fd;
-    --btn-backtotop-color: #3949ab;
-    --btn-backtotop-border-color: rgba(255, 255, 255, 0.6);
-    
-    /* Interactive Elements */
-    --checkbox-color: #c5cae9;
-    --checkbox-checked-color: #ffb300;
-    --btn-patinator-text-color: #ffb300;
-    --btn-paginator-hover-color: #ffca28;
-    --toc-highlight: #ffb300;
-    --btn-share-hover-color: #ffb300;
-    
-    /* Images & Media */
-    --img-bg: radial-gradient(circle, #ffffff 0%, #e3f2fd 100%);
-    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(144,202,249,30%) 50%, rgba(255,255,255,0%) 100%);
-    
-    /* Sidebar - Daytime sky */
-    --sidebar-bg: linear-gradient(180deg, #1565c0 0%, #42a5f5 50%, #bbdefb 100%);
-    --sidebar-border-color: #90caf9;
-    --sidebar-muted-color: #e3f2fd;
-    --sidebar-active-color: #ffb300;
-    --sidebar-hover-bg: rgba(255, 179, 0, 0.2);
-    --sidebar-btn-bg: rgba(21, 101, 192, 0.7);
-    --sidebar-btn-color: #e3f2fd;
-    --avatar-border-color: #ffb300;
-    
-    /* Topbar */
-    --topbar-bg: linear-gradient(90deg, rgba(227, 242, 253, 0.95) 0%, rgba(187, 222, 251, 0.95) 100%);
-    --topbar-text-color: #1565c0;
-    
-    /* Search */
-    --search-border-color: #90caf9;
-    --search-icon-color: #ffb300;
-    --input-focus-border-color: #ffb300;
-    
-    /* Cards & Content */
-    --card-hover-bg: linear-gradient(135deg, rgba(227, 242, 253, 0.8) 0%, rgba(187, 222, 251, 0.8) 100%);
-    --footnote-target-bg: #e3f2fd;
-    --card-shadow: 0 8px 32px rgba(33, 150, 243, 0.15), 
-                   0 0 0 1px rgba(66, 165, 245, 0.2), 
-                   0 0 40px rgba(100, 181, 246, 0.1) inset;
-    
-    /* Tags & Categories */
-    --tag-border: #ffb300;
-    --tag-hover: #ffca28;
-    --search-tag-bg: #e3f2fd;
-    --categories-border: rgba(255, 179, 0, 0.4);
-    --categories-hover-bg: #ffca28;
-    
-    /* Timeline */
-    --timeline-color: rgba(255, 179, 0, 0.15);
-    --timeline-node-bg: #ffb300;
-    --timeline-year-dot-color: #ffffff;
-    
-    /* Code & Technical */
-    --language-border-color: #bbdefb;
-    --highlight-bg-color: #fafcff;
-    --highlighter-rouge-color: #1a237e;
-    --highlight-lineno-color: #c5cae9;
-    --inline-code-bg: rgba(255, 179, 0, 0.1);
-    --code-color: #1a237e;
-    --code-header-text-color: #9fa8da;
-    --code-header-muted-color: #e8eaf6;
-    --code-header-icon-color: #c5cae9;
-    --clipboard-checked-color: #4caf50;
-}
-
-/* Starry Night Dark Theme - The iconic painting with stars */
 html[data-mode=dark] {
-    /* Main Background - Swirling night sky with stars */
-    --main-bg: linear-gradient(135deg, #0a1128 0%, #1c2a48 25%, #2d3b5a 50%, #1c2a48 75%, #0a1128 100%);
-    
-    /* Text Colors */
-    --text-color: #e8f4f8;
-    --text-muted-color: #a6b6d6;
-    --text-muted-highlight-color: #ffffff;
-    --heading-color: #ffffff;
-    --label-color: #c5d0e6;
-    
-    /* Accent Colors */
-    --link-color: #ffd54f;
-    --link-underline-color: #ffe082;
-    --sidebar-active-color: #ffd54f;
-    --toc-highlight: #ffd54f;
-    
-    /* UI Elements */
-    --main-border-color: #3f51b5;
-    --blockquote-border-color: #5c6bc0;
-    --blockquote-text-color: #c5d0e6;
-    --button-bg: rgba(12, 20, 69, 0.4);
-    --btn-border-color: #3f51b5;
-    --btn-backtotop-color: #e8f4f8;
-    --btn-backtotop-border-color: #1c2a48;
-    
-    /* Interactive States */
-    --tag-hover: rgba(255, 213, 79, 0.25);
-    --sidebar-hover-bg: rgba(255, 213, 79, 0.2);
-    --btn-paginator-hover-color: rgba(63, 81, 181, 0.5);
-    --btn-share-hover-color: #ffd54f;
-    --categories-hover-bg: rgba(255, 213, 79, 0.25);
-    
-    /* Sidebar - Starry Night painting background */
-    --sidebar-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='600' viewBox='0 0 300 600'%3E%3Cdefs%3E%3ClinearGradient id='nightSky' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230a1128'/%3E%3Cstop offset='50%25' stop-color='%231c2a48'/%3E%3Cstop offset='100%25' stop-color='%230a1128'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='600' fill='url(%23nightSky)'/%3E%3Ccircle cx='80' cy='120' r='2' fill='%23ffd54f' opacity='0.9'/%3E%3Ccircle cx='220' cy='80' r='1.5' fill='%23ffffff' opacity='0.8'/%3E%3Ccircle cx='150' cy='200' r='2.5' fill='%23ffd54f' opacity='0.95'/%3E%3Ccircle cx='100' cy='300' r='1' fill='%23ffffff' opacity='0.7'/%3E%3Ccircle cx='250' cy='250' r='2' fill='%23ffd54f' opacity='0.9'/%3E%3Ccircle cx='180' cy='400' r='1.5' fill='%23ffffff' opacity='0.8'/%3E%3Ccircle cx='60' cy='450' r='2' fill='%23ffd54f' opacity='0.9'/%3E%3Ccircle cx='200' cy='500' r='1' fill='%23ffffff' opacity='0.7'/%3E%3C/svg%3E"), 
-                  linear-gradient(180deg, #0a1128 0%, #1c2a48 100%);
-    --sidebar-border-color: #3f51b5;
-    --sidebar-muted-color: #a6b6d6;
-    --sidebar-btn-bg: rgba(10, 17, 40, 0.6);
-    --sidebar-btn-color: #c5d0e6;
-    
-    /* Topbar */
-    --topbar-bg: rgba(10, 17, 40, 0.95);
-    --topbar-text-color: #ffd54f;
-    
-    /* Cards & Panels */
-    --card-hover-bg: linear-gradient(135deg, rgba(63, 81, 181, 0.3) 0%, rgba(255, 213, 79, 0.2) 100%);
-    --footnote-target-bg: rgba(255, 213, 79, 0.1);
-    --card-shadow: 0 8px 32px rgba(28, 42, 72, 0.4), 
-                   0 0 0 1px rgba(255, 213, 79, 0.15), 
-                   0 0 40px rgba(255, 213, 79, 0.08) inset;
-    
-    /* Code & Technical */
-    --highlight-bg-color: #0d1529;
-    --highlighter-rouge-color: #e8f4f8;
-    --inline-code-bg: rgba(255, 213, 79, 0.15);
-    --code-color: #e8f4f8;
-    
-    /* Images & Media */
-    --img-bg: radial-gradient(circle, #1c2a48 0%, #0a1128 100%);
-    --shimmer-bg: linear-gradient(90deg, rgba(255,255,255,0%) 0%, rgba(255,213,79,20%) 50%, rgba(255,255,255,0%) 100%);
-    
-    /* Additional Elements */
-    --checkbox-checked-color: #ffd54f;
-    --avatar-border-color: #ffd54f;
-    --search-border-color: #3f51b5;
-    --search-icon-color: #ffd54f;
-    --input-focus-border-color: #ffd54f;
-    --btn-patinator-text-color: #ffe082;
-    --tag-border: #ffd54f;
-    --search-tag-bg: rgba(63, 81, 181, 0.3);
-    --categories-border: rgba(255, 213, 79, 0.3);
-    --timeline-color: rgba(255, 213, 79, 0.15);
-    --timeline-node-bg: #ffd54f;
-    --language-border-color: #1c2a48;
-    --code-header-text-color: #a6b6d6;
-    --code-header-muted-color: #2d3b5a;
-    --code-header-icon-color: #3f51b5;
-    --clipboard-checked-color: #66bb6a;
+  color-scheme: dark;
+
+  /* General Backgrounds */
+  --main-bg: #0b0c27;              /* Deep night sky */
+  --mask-bg: #1c1d3a;              /* Slightly lighter mask */
+  --main-border-color: #2a2b40;
+
+  /* Text */
+  --text-color: #e0e0ff;           /* Moonlight white */
+  --text-muted-color: #b0b0d0;     
+  --text-muted-highlight-color: #d0d0ff;
+  --heading-color: #f0f0ff;
+  --label-color: #a8a8c0;
+
+  /* Blockquotes */
+  --blockquote-border-color: #444466;
+  --blockquote-text-color: #a8a8c0;
+
+  /* Links */
+  --link-color: #7ec0ff;           /* Starlight blue links */
+  --link-underline-color: #5aa0ff;
+
+  /* Buttons */
+  --button-bg: #1a1b33;
+  --btn-border-color: #2a2b44;
+  --btn-backtotop-color: #e0e0ff;
+  --btn-backtotop-border-color: #2a2b44;
+  --btn-patinator-text-color: #e0e0ff;
+  --btn-paginator-hover-color: #2c2d50;
+
+  /* Cards / Panels */
+  --card-bg: #1a1b33;
+  --card-hover-bg: #2c2d50;        /* Subtle glow on hover */
+  --card-shadow: rgba(0, 0, 64, 0.5) 0 6px 18px 0, rgba(72, 72, 200, 0.2) 0 0 0 1px;
+  --card-header-bg: #29294d;
+
+  /* Sidebar */
+  --sidebar-bg: #121233;
+  --sidebar-border-color: #1c1c4a;
+  --sidebar-muted-color: #a0a0d0;
+  --sidebar-active-color: #ffffff;
+  --sidebar-hover-bg: #1e1e44;
+  --sidebar-btn-bg: #232340;
+  --sidebar-btn-color: #7878c0;
+
+  /* Topbar */
+  --topbar-bg: rgba(11,12,39,0.9);
+  --topbar-text-color: #e0e0ff;
+
+  /* Avatar / Misc */
+  --avatar-border-color: #7ec0ff;
+  --tag-border: #334466;
+  --tag-hover: #445577;
+  --timeline-node-bg: #7ec0ff;
+  --timeline-color: #3c3c70;
+  --timeline-year-dot-color: var(--timeline-color);
+
+  /* Code & Syntax Highlighting */
+  --highlight-bg-color: #0b0c27;   /* Code block background */
+  --highlighter-rouge-color: #c0d0ff;
+  --highlight-lineno-color: #6666aa;
+  --inline-code-bg: rgba(126, 192, 255, 0.05);
+  --code-color: #d0d0ff;
+  --code-header-text-color: #a0a0d0;
+  --code-header-muted-color: #303060;
+  --code-header-icon-color: #7070c0;
+  --clipboard-checked-color: #88c0ff;
+  --filepath-text-color: #b0b0ff;
+
+  /* Prompts */
+  --prompt-text-color: rgba(216, 212, 212, 0.75);
+  --prompt-tip-bg: rgba(22, 60, 36, 0.64);
+  --prompt-tip-icon-color: rgba(15, 164, 15, 0.81);
+  --prompt-info-bg: rgba(7, 59, 104, 0.8);
+  --prompt-info-icon-color: #7ec0ff;
+  --prompt-warning-bg: rgba(90, 69, 3, 0.88);
+  --prompt-warning-icon-color: #ffd966;
+  --prompt-danger-bg: rgba(86, 28, 8, 0.8);
+  --prompt-danger-icon-color: #ff5555;
 }
 
-/* Starry Night Effects */
-.starry-night-effect {
-    position: relative;
-    overflow: hidden;
+/* Code block syntax highlighting */
+html[data-mode=dark] .highlight,
+html[data-mode=dark] .highlight .w {
+  color: #d0d0ff;
+  background-color: var(--highlight-bg-color);
+}
+html[data-mode=dark] .highlight .err {
+  color: #0b0c27;
+  background-color: #ff4c4c;
+}
+html[data-mode=dark] .highlight .c,
+html[data-mode=dark] .highlight .ch,
+html[data-mode=dark] .highlight .cd,
+html[data-mode=dark] .highlight .cm,
+html[data-mode=dark] .highlight .cpf,
+html[data-mode=dark] .highlight .c1,
+html[data-mode=dark] .highlight .cs {
+  color: #8484c0; /* comment-like moonlight */
+}
+html[data-mode=dark] .highlight .cp,
+html[data-mode=dark] .highlight .nt {
+  color: #f4bf75;
+}
+html[data-mode=dark] .highlight .gi {
+  color: #90a959;
+}
+html[data-mode=dark] .highlight .gd {
+  color: #f08a8b;
+  background-color: #320000;
+}
+html[data-mode=dark] .highlight .gh {
+  color: #6a9fb5;
+  font-weight: bold;
+  background-color: #0b0c27;
+}
+html[data-mode=dark] .highlight .k,
+html[data-mode=dark] .highlight .kn,
+html[data-mode=dark] .highlight .kp,
+html[data-mode=dark] .highlight .kr,
+html[data-mode=dark] .highlight .kv {
+  color: #aa759f;
+}
+html[data-mode=dark] .highlight .kc,
+html[data-mode=dark] .highlight .kt,
+html[data-mode=dark] .highlight .kd {
+  color: #d28445;
+}
+html[data-mode=dark] .highlight .s,
+html[data-mode=dark] .highlight .sb,
+html[data-mode=dark] .highlight .sc,
+html[data-mode=dark] .highlight .dl,
+html[data-mode=dark] .highlight .sd,
+html[data-mode=dark] .highlight .s2,
+html[data-mode=dark] .highlight .sh,
+html[data-mode=dark] .highlight .sx,
+html[data-mode=dark] .highlight .s1 {
+  color: #90a959;
+}
+html[data-mode=dark] .highlight .sa {
+  color: #aa759f;
+}
+html[data-mode=dark] .highlight .sr {
+  color: #75b5aa;
+}
+html[data-mode=dark] .highlight .si,
+html[data-mode=dark] .highlight .se {
+  color: #b76d45;
+}
+html[data-mode=dark] .highlight .nn,
+html[data-mode=dark] .highlight .nc,
+html[data-mode=dark] .highlight .no {
+  color: #f4bf75;
+}
+html[data-mode=dark] .highlight .na {
+  color: #6a9fb5;
+}
+html[data-mode=dark] .highlight .m,
+html[data-mode=dark] .highlight .mb,
+html[data-mode=dark] .highlight .mf,
+html[data-mode=dark] .highlight .mh,
+html[data-mode=dark] .highlight .mi,
+html[data-mode=dark] .highlight .il,
+html[data-mode=dark] .highlight .mo,
+html[data-mode=dark] .highlight .mx {
+  color: #90a959;
+}
+html[data-mode=dark] .highlight .ss {
+  color: #90a959;
 }
 
-.starry-night-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        radial-gradient(2px 2px at 20px 30px, #ffd54f 50%, transparent 50%),
-        radial-gradient(2px 2px at 40px 70px, #ffffff 50%, transparent 50%),
-        radial-gradient(1px 1px at 90px 40px, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 130px 80px, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 160px 30px, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 200px 60px, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 240px 90px, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 280px 20px, #ffffff 50%, transparent 50%);
-    background-repeat: repeat;
-    background-size: 300px 100px;
-    opacity: 0.3;
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Animated stars for dark mode */
-html[data-mode=dark] body {
-    position: relative;
-}
-
-html[data-mode=dark] body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(2px 2px at 5% 10%, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 15% 20%, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 25% 30%, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 35% 40%, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 45% 50%, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 55% 60%, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 65% 70%, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 75% 80%, #ffffff 50%, transparent 50%),
-        radial-gradient(2px 2px at 85% 90%, #ffd54f 50%, transparent 50%),
-        radial-gradient(1px 1px at 95% 15%, #ffffff 50%, transparent 50%);
-    background-repeat: repeat;
-    background-size: 100% 100%;
-    opacity: 0.4;
-    pointer-events: none;
-    z-index: -1;
-    animation: twinkle 4s ease-in-out infinite alternate;
-}
-
-@keyframes twinkle {
-    0% { opacity: 0.3; }
-    100% { opacity: 0.6; }
-}
-
-/* Sidebar with Starry Night background image */
-#sidebar {
-    background: var(--sidebar-bg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Enhanced gradients for main content */
-#main-wrapper {
-    background: var(--main-bg);
-    background-attachment: fixed;
-}
-
-/* Fix for hover colors */
-#page-category a:hover,#page-tag a:hover,#access-lastmod a:hover,.post-tail-wrapper .license-wrapper>a:hover,#search-results a:hover,footer a:hover,#topbar #breadcrumb a:hover,.post-meta a:not([class]):hover,.content a:not(.img-link):hover{
-    color: #ffd54f !important;
-    border-bottom: 1px solid #ffd54f;
-    text-decoration: none;
-}
-
-/* Card enhancements for starry effect */
-.post-preview {
-    position: relative;
-    overflow: hidden;
-}
 
 html[data-mode=dark] .post-preview::after {
     content: '';
