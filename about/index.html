@@ -1,18 +1,4 @@
 <!doctype html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="en" data-mode="light">
   <head>
@@ -32,8 +18,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="About" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Hi there, I’m Dreaith! 👋" />
-<meta property="og:description" content="Hi there, I’m Dreaith! 👋" />
+<meta name="description" content="Hi there, I'm Dreaith! 👋" />
+<meta property="og:description" content="Hi there, I'm Dreaith! 👋" />
 <link rel="canonical" href="http://localhost:4000/about/" />
 <meta property="og:url" content="http://localhost:4000/about/" />
 <meta property="og:site_name" content="Dreaith" />
@@ -42,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","dateModified":"2025-09-23T01:42:57+08:00","datePublished":"2025-09-23T01:42:57+08:00","description":"Hi there, I’m Dreaith! 👋","headline":"About","name":"Dreaith","sameAs":["https://github.com/Amdreaith"],"url":"http://localhost:4000/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","dateModified":"2025-09-23T01:42:57+08:00","datePublished":"2025-09-23T01:42:57+08:00","description":"Hi there, I'm Dreaith! 👋","headline":"About","name":"Dreaith","sameAs":["https://github.com/Amdreaith"],"url":"http://localhost:4000/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -211,6 +197,40 @@
 
   <!-- A placeholder to allow defining custom metadata -->
 
+  <style>
+    /* Custom styles for the new layout */
+    .top-right-panel {
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      width: 300px;
+      z-index: 100;
+    }
+    
+    .main-content-with-sidebar {
+      margin-right: 340px;
+    }
+    
+    @media (max-width: 1200px) {
+      .top-right-panel {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .main-content-with-sidebar {
+        margin-right: 0;
+      }
+    }
+    
+    .panel-card {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 
 
@@ -392,7 +412,50 @@
 
 
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <!-- Top Right Panel -->
+          <div class="top-right-panel">
+            <!-- Recently Updated -->
+            <div class="panel-card">
+              <h2 class="panel-heading">Recently Updated</h2>
+              <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+                <li class="text-truncate lh-lg">
+                  <a href="/posts/text-and-typography/">First e CyEs</a>
+                </li>
+                <li class="text-truncate lh-lg">
+                  <a href="/posts/customize-the-favicon/">Redirection of Non-Existent, gh and .co...</a>
+                </li>
+                <li class="text-truncate lh-lg">
+                  <a href="/posts/getting-started/">Certified Bug Country Hunter</a>
+                </li>
+                <li class="text-truncate lh-lg">
+                  <a href="/posts/write-a-new-post/">ASSAVI Cyber Shield 2024</a>
+                </li>
+                <li class="text-truncate lh-lg">
+                  <a href="/posts/write-a-new-post/">Cyber SEA Games 2024</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Trending Tags -->
+            <div class="panel-card">
+              <h2 class="panel-heading">Trending Tags</h2>
+              <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/avend/">avend</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/ctf/">ctf</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/exam/">exam</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/scs/">scs</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/cbbh/">cbbh</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/cvc/">cvc</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/cybersuggames/">cybersuggames</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/pGip/">pGip</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/paldem/">paldem</a>
+                <a class="post-tag btn btn-outline-primary mb-2 me-2" href="/tags/hacklepro/">hacklepro</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4 main-content-with-sidebar">
             
               <!-- Refactor the HTML structure -->
 
@@ -668,10 +731,10 @@
       About
     </h1>
     <div class="content">
-      <h1 id="hi-there-im-dreaith-">Hi there, I’m Dreaith! 👋</h1>
+      <h1 id="hi-there-im-dreaith-">Hi there, I'm Dreaith! 👋</h1>
 
 <blockquote>
-  <p>“The curious explorer in a digital world.”</p>
+  <p>"The curious explorer in a digital world."</p>
 </blockquote>
 
 <p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9mc2xwaHZtNGh4MG4ycWZlb2IxZnNoaHA3b2l5b2VwdzJ6bDlndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fS4cWezsJoXPYzLR45/giphy.gif" class="popup img-link w-50 shimmer"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG9mc2xwaHZtNGh4MG4ycWZlb2IxZnNoaHA3b2l5b2VwdzJ6bDlndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fS4cWezsJoXPYzLR45/giphy.gif" alt="Cybersecurity Animated GIF" class="shadow rounded-3" loading="lazy"></a>
@@ -687,7 +750,7 @@
 
 <h2 id="-fun-facts-about-me"><span class="me-2">💫 Fun Facts About Me</span><a href="#-fun-facts-about-me" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>When I’m not diving into cybersecurity, you’ll find me:</p>
+<p>When I'm not diving into cybersecurity, you'll find me:</p>
 <ul>
    <li><strong>🎨 Painting or sketching </strong> - expressing creativity through colors and canvases.</li>
   <li><strong>📺 Watching self-help , mental health related and motivation videos</strong> (inspiring content) </li>
@@ -707,7 +770,7 @@
 <p><a href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmoybW0ydWs2dmJ0eHJxMW1tcjIxdnVvNDF1N3FxbWZoNmxlNzhtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQQRWxSlW1tWvWigA9/giphy.gif" class="popup img-link w-50 shimmer"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmoybW0ydWs2dmJ0eHJxMW1tcjIxdnVvNDF1N3FxbWZoNmxlNzhtayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jQQRWxSlW1tWvWigA9/giphy.gif" alt="GIF" class="shadow rounded-3" loading="lazy"></a></p>
 
 <blockquote>
-  <p><strong>This journey is about consistent learning, not perfection. There’s a lot to learn, and that is a privilege to study.</strong></p>
+  <p><strong>This journey is about consistent learning, not perfection. There's a lot to learn, and that is a privilege to study.</strong></p>
 </blockquote>
 
 
@@ -718,493 +781,6 @@
 
             
           </main>
-
-          <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            <div class="access">
-              <!-- Get 5 last posted/updated posts -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="access-lastmod">
-    <h2 class="panel-heading">Recently Updated</h2>
-    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">Google Cybersecurity Certification</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/customize-the-favicon/">Blog (Medium)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started/">CTF Industrial Intrusion Participant (TryHackMe)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/write-a-new-post/">(UCTF) Capture the Flag Participant — Trend Micro</a>
-        </li>
-      
-    </ul>
-  </section>
-  <!-- #access-lastmod -->
-
-
-              <!-- The trending tags list -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-
-
-  <section>
-    <h2 class="panel-heading">Trending Tags</h2>
-    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/cybersecurity/">Cybersecurity</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ctf/">CTF</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/bash/">Bash</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/blogging/">Blogging</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/certification/">Certification</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/competition/">Competition</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/google/">Google</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/industrial-intrusion/">Industrial Intrusion</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/learning/">Learning</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/networking/">Networking</a>
-      
-    </div>
-  </section>
-
-
-            </div>
-
-            
-          </aside>
         </div>
 
         <div class="row">
@@ -1259,438 +835,6 @@
       </div>
     </div>
   </div>
-
-      <!-- The trending tags list -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-
-
-  <section>
-    <h2 class="panel-heading">Trending Tags</h2>
-    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/cybersecurity/">Cybersecurity</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ctf/">CTF</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/bash/">Bash</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/blogging/">Blogging</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/certification/">Certification</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/competition/">Competition</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/google/">Google</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/industrial-intrusion/">Industrial Intrusion</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/learning/">Learning</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/networking/">Networking</a>
-      
-    </div>
-  </section>
-
-
-    </div>
-    <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
-  </div>
-</div>
 
       </div>
 
@@ -1776,4 +920,3 @@
 
   </body>
 </html>
-
